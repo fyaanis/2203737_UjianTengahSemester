@@ -1,0 +1,37 @@
+package Soal2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author NISWA
+ */
+
+public class Soal2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int bil, pos = 0, neg = 0, tot = 0;
+        double jlh = 0;
+                
+        do {
+            bil = scanner.nextInt();
+            
+            if(bil>0){
+                pos++;
+            }else if(bil<0){
+                neg++;
+            }
+            
+            tot += bil;
+            jlh++;
+            
+        }while(bil != 0);
+        
+        double rata = tot/(jlh-1);
+        
+        System.out.println("Jumlah bilangan positif : " + pos);
+        System.out.println("Jumlah bilangan negatif : " + neg);
+        System.out.println("Nilai total : " + tot);
+        System.out.println("Nilai rata-rata : " + rata);
+    }
+}
