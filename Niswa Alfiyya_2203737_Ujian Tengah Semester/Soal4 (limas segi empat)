@@ -1,0 +1,51 @@
+package Soal4;
+
+public class LimasSegiEmpat {
+    private double luasAlas;
+    private double luasSelubungLimas;
+    private double tinggi;
+
+    public LimasSegiEmpat() {
+        luasAlas = 1;
+        luasSelubungLimas = 1;
+        tinggi = 1;
+    }
+
+    public LimasSegiEmpat(double luasAlasBaru, double luasSelubungLimasBaru, double tinggiBaru) {
+        luasAlas = luasAlasBaru;
+        luasSelubungLimas = luasSelubungLimasBaru;
+        tinggi = tinggiBaru;
+    }
+
+    public double getLuasAlas() {
+        return luasAlas;
+    }
+
+    public double getLuasSelubungLimas() {
+        return luasSelubungLimas;
+    }
+
+    public double getTinggi() {
+        return tinggi;
+    }
+
+    public double getLuas() {
+        return luasAlas + luasSelubungLimas;
+    }
+
+    public double getVolume() {
+        return (1.0 / 3.0) * luasAlas * tinggi;
+    }
+
+    public void setLuasAlas(double luasAlasBaru) {
+        luasAlas = luasAlasBaru;
+    }
+
+    public void setLuasSelubungLimas(double luasSelubungLimasBaru) {
+        luasSelubungLimas = luasSelubungLimasBaru;
+    }
+
+    public void setTinggi(double tinggiBaru) {
+        tinggi = tinggiBaru;
+    }
+}
