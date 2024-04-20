@@ -1,0 +1,27 @@
+package Soal3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author NISWA
+ */
+public class Soal3 {
+    public static int sumDigits(long n) {
+        int tot = 0;
+        while (n != 0) {
+            tot += n % 10;
+            n /= 10;
+        }
+        return tot;
+    }
+    
+     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan bilangan : ");
+        long bil = scanner.nextLong();
+
+        System.out.println("Jumlah : " + sumDigits(bil));
+    }
+}
